@@ -1,0 +1,27 @@
+service: {{serviceName}}
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: default
+  region: eu-west-1
+  timeout: 20
+  stage: ${opt:stage}
+  environment:
+    STAGE: ${self:provider.stage}
+
+functions:
+  api:
+    name: ${self:service}-${self:provider.stage}
+    description: ${self:service} - ${self:provider.stage}
+    handler: server-lambda.handler
+    events:
+      - http:
+         path: /
+         method: get
+      - http:
+         path: /{proxy+}
+         method: get
