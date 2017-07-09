@@ -3,12 +3,15 @@
   "version": "0.5.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "bin": {
     "create-lambda-express": "./index.js"
   },
-  "author": "Vijai Ramcharan",
+  "repository": {
+    "url": "https://github.com/vijairamcharan/create-lambda-express",
+    "type": "git"
+  },
+  "author": "Vijai Ramcharan <vijai.ramcharan@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.3",
