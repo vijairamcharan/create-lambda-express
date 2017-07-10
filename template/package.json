@@ -5,7 +5,7 @@
   "author": "Vijai Ramcharan",
   "license": "MIT",
   "scripts": {
-    "deploy": "yarn deploy:dev",
+    "deploy": "yarn deploy-dev",
     "deploy-dev": "./node_modules/.bin/serverless deploy --stage dev",
     "deploy-prod": "./node_modules/.bin/sure && ./node_modules/.bin/serverless deploy --stage prod",
     "start": "rm -rf ./.build && webpack --config  webpack.config.local.js",
