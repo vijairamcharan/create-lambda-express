@@ -29,7 +29,7 @@
     "inquirer": "^3.1.1",
     "react-dev-utils": "^3.0.0",
     "serverless": "^1.14.0",
-    "serverless-webpack": "^1.0.0-rc.4",
+    "serverless-webpack": "^2.0.0",
     "start-server-webpack-plugin": "^2.2.0",
     "sure": "^0.0.3",
     "webpack": "^3.2.0",
