@@ -1,13 +1,16 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "node": "6.10"
-      },
-      "debug": true,
-      "useBuiltIns": true
-
-    }],
+    [
+      "env",
+      {
+        "targets": {
+          "node": "6.10"
+        },
+        "debug": true,
+        "useBuiltIns": true,
+        "modules": false // important for HMR to work, don't use babel modules but let webpack handle it
+      }
+    ],
     "stage-2"
   ]
 }
