@@ -20,3 +20,8 @@ After which the server will be started, and your browser will open at http://loc
 {"message":"express server is running succesfully"}
 ```
 
+Once you are ready to deploy the service to AWS all you need to do is run
+```
+$> yarn deploy
+```
+
