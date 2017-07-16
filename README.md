@@ -1,5 +1,5 @@
 # create-lambda-express
-Creating a Node.js microservice and deploying it on AWS Lambda should be very easy. Inspired heavily by create-react-app, create-lambda-express allows you to scaffold out a production-ready microservice that focuses on DX and follows modern practices out of the box.
+Create an Node.js powered AWS Lambda microservice that follows modern practices so you can focus on adding business value. Inspired heavily by create-react-app, create-lambda-express allows you to scaffold out a production-ready microservice that focuses on DX very quickly.
 
 As the name implies, the code generated is an **Express application** that can be deployed to **AWS Lambda**. Other notable technologies used are **Serverless, Babel and Webpack**.
 
@@ -35,6 +35,13 @@ Long story short, Serverless helped out a lot, but still, if you only follow the
 * Use **modern javascript** (ES2015+) with Babel
 * Support for **deploying Dev and prod versions** of your service
 * Use **babel-preset-env** to serve the most optimal code for Node.js 6.10 which runs on AWS Lambda
+* **Use local dependencies** instead of globally installed packages (like serverless), so everyone in your team uses the same version
 * Local DX: Node.js **HMR** (Hot module reloading)
 * Local DX: **Start the browser automatically** when running yarn start
 * Local DX: **Automatically choose a different port** as the default 3000 when it is taken, or kill the process running there and start anyways
+
+## Feedback
+If you have any feedback, suggestions or bugs to report, I would love it if you would open an issue to let me know. This package can only get better with your input.
+
+## Thank you
+Besides all the used package owners / maintainers, a special thank you to Facebook for creating create-react-app, the 'yarn create' command and for bringing HMR in our world (thank you Dan :bowtie:). Also thanks to https://github.com/mhaagens/hot-reload-all-the-things for the best way I could currently find to get HMR on the Node.js side.
