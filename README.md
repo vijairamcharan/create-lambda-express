@@ -6,12 +6,12 @@ As the name implies, the code generated is an **Express application** that can b
 ## Quick start
 Run the following command
 ```sh
-$> yarn create lambda-express hello-lambda
+yarn create lambda-express hello-lambda
 ```
 This will install create-lambda-express globally and create a lambda service named hello-lambda. After this you are ready to run
 ```sh
-$> cd hello-lambda
-$> yarn start
+cd hello-lambda
+yarn start
 ```
 After which the server will be started, and your browser will open at http://localhost:3000 and greet you with
 ```json
@@ -20,7 +20,7 @@ After which the server will be started, and your browser will open at http://loc
 
 Once you are ready to deploy the service to AWS all you need to do is run
 ```sh
-$> yarn deploy
+yarn deploy
 ```
 
 ## Prerequisites
