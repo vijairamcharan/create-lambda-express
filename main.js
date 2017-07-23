@@ -85,7 +85,7 @@ var main = () => {
   })
     .then(({ files }) => {
       process.chdir(targetPath);
-      fs.renameSync('gitignore', '.gitgnore');
+      fs.renameSync('gitignore', '.gitignore');
       return runYarn();
     })
     .then(_ => {
